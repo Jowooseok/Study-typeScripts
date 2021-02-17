@@ -1,13 +1,11 @@
 class User{
-    name: string;
-    photo: string;
-    phone: number;
 
-    constructor(name:string, photo:string, phone:number){
-        this.name = name;
-        this.photo = photo;
-        this.phone = phone;
-    }
+
+    constructor(
+        readonly name: string,
+        private photo: string,
+        public phone: number
+    ){}
 
     introduceMyProfile(){
         return `My name ${this.name} and phoneNumber is ${this.phone}`;
