@@ -1,4 +1,6 @@
-export class User{
+import {IntroduceMyProfile} from '../interfaces/introduceMyProfile.js';
+
+export class User implements IntroduceMyProfile{
     constructor(
         readonly name: string,
         private photo: string,
